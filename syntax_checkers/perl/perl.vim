@@ -35,7 +35,7 @@ function! SyntaxCheckers_perl_perl_IsAvailable()
 endfunction
 
 if !exists("g:syntastic_perl_efm_program")
-    let g:syntastic_perl_efm_program = 'perl ' . shellescape(expand('<sfile>:p:h') . '/efm_perl.pl') . ' -c -w'
+    let g:syntastic_perl_efm_program = 'booking-perl ' . shellescape(expand('<sfile>:p:h') . '/efm_perl.pl') . ' -c -w'
 endif
 
 function! SyntaxCheckers_perl_perl_GetLocList()
